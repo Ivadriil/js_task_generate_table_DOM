@@ -361,7 +361,7 @@ const table = document.querySelector('table.dashboard');
 
 function createTableRow(person) {
   const row = document.createElement('tr');
-  
+
   const nameCell = document.createElement('td');
   const genderCell = document.createElement('td');
   const bornCell = document.createElement('td');
@@ -374,7 +374,7 @@ function createTableRow(person) {
   bornCell.textContent = person.born;
   diedCell.textContent = person.died;
   ageCell.textContent = person.died - person.born;
-  centuryCell.textContent = Math.ceil(person.born / 100);
+  centuryCell.textContent = Math.ceil(person.died / 100);
 
   row.appendChild(nameCell);
   row.appendChild(genderCell);
