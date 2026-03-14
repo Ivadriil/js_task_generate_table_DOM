@@ -387,8 +387,7 @@ function createTableRow(person) {
 }
 
 people.forEach((person) => {
-
   const row = createTableRow(person);
-  
+
   table.appendChild(row);
 });
